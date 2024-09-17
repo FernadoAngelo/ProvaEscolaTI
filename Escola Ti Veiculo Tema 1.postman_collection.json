@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "577e196b-6a9e-46ff-9bba-99569d145d77",
+		"name": "Escola Ti Veiculo Tema 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38385959"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"modelo\" : \"Fuscão Brabo\",\r\n      \"anoFabricacao\" : 2024,\r\n      \"placa\" : \"OMG1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/veiculo"
+			},
+			"response": []
+		},
+		{
+			"name": "ReadAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/veiculo"
+			},
+			"response": []
+		},
+		{
+			"name": "FindOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/veiculo/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/veiculo/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"modelo\" : \"Fuscão Pistola\",\r\n      \"anoFabricacao\" : 2000,\r\n      \"placa\" : \"P0M1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/veiculo/1"
+			},
+			"response": []
+		}
+	]
+}
