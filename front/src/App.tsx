@@ -32,7 +32,6 @@ function App() {
       placa: formData.placa,
       acessorio: [acessorioModel]
     };
-
     
     api.post('veiculo', veiculo)
       .then(function (response: any) {
